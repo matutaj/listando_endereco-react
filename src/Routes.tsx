@@ -5,7 +5,7 @@ export function AppRoutes() {
     return (
         <Router>
             <Routes>
-                <Route path="/provincia" element={<Provincia />} />
+                <Route path="/" element={<Provincia />} />
             </Routes>
 
         </Router>

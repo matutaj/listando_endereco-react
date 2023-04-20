@@ -1,17 +1,5 @@
 import styled from "styled-components";
 
-export const PageMain = styled.body`
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #c8c8c8;
-    width: 100%;
-    background-color: #272b30;
-    height: 200vh;
-`
 
 export const Logo = styled.img`
 width:200px;
@@ -28,6 +16,7 @@ display: flex ;
     background: #777;
     font-family: Roboto, sans-serif;
     width: 100%;
+    height: 50px;
    
    
 `;
@@ -49,38 +38,38 @@ justify-content: space-around;
         color:#2b2e32 ;
 }
 `;
+export const Input = styled.div`
+  display  :flex ;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 100px;
+`;
+export const Pesquisa = styled.input`
+    width: 400px;
+    padding: 03px;
+    height: 40px;
+    color: #777;
+    font-size: 19px;
+    font-family: sans-serif;
+    border: none;
 
-export const Wel = styled.div`
-    margin-bottom: 30px;
-    background-color: #1c1e22;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    border: 1px solid rgba(0, 0, 0, 0.6);
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url('https://bootstrapmade.com/demo/templates/Logis/assets/img/hero-bg.png');
-    background-size: cover;
-    h2{
-        font-size: 63px;
-        color: #cabb49;
-        
+    :focus{
 
-    }
-    span{
-        font-size:19px;
-        margin-top: -45px;
-    }
-    p{
-
-        font-size:19px;
-        margin-top: -3px;
     }
 `;
+export const Button = styled.button`
+    width: 105px;
+    border: none;
+    padding: 01px;
+    height: 40px;
+    background-color: #777;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
 
-export const Listar = styled.div`
-width: 100%;
-height: 500px;
-`;
+    :hover{
+        background-color: #2f3a4e;
+    }
+
+`

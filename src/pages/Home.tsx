@@ -1,8 +1,7 @@
-import { Tweeter } from "../components/Header"
-import { Wel } from '../components/styled'
 import axios from "axios"
-import { Listar } from '../components/styled'
-
+import { Header } from "../components/Header"
+import { InputPesquisa } from "../components/InputPesquisa"
+import { Listar, Wel } from "./styled"
 export function Provincia() {
 
     const Url = 'https://express-rent-a-car-backend.vercel.app'
@@ -17,13 +16,17 @@ export function Provincia() {
 
     return (
         <div>
-            <Tweeter />
+            <Header />
             <Wel>
                 <h2>Welcome </h2>
                 <span>Conheças as Províncias Do País</span>
                 <p>Qual é o seu Endereco</p>
             </Wel>
+            <InputPesquisa />
             <Listar>
+                <div>
+                    <h1>Result</h1>
+                </div>
             </Listar>
         </div>
     )
